@@ -653,7 +653,7 @@ footer {
       <a href="#features">Features</a>
       <a href="#story">The Story</a>
       <a href="#mission">Mission</a>
-      <button class="nav-cta" onclick="document.querySelector('.footer-cta').scrollIntoView({behavior:'smooth'})">Download</button>
+      <a class="nav-cta" href="https://johnlaz.github.io/armory/" target="_blank">Launch App</a>
     </div>
   </div>
 </nav>
@@ -687,13 +687,16 @@ footer {
       </div>
       
       <div class="hero-btns">
-        <button class="btn btn-primary" onclick="document.querySelector('.footer-cta').scrollIntoView({behavior:'smooth'})">
+        <a class="btn btn-primary" href="https://johnlaz.github.io/armory/" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
           </svg>
-          Download for Android
-        </button>
+          Launch the Vault
+        </a>
         <button class="btn btn-ghost" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">See the Vault</button>
+        <a class="btn btn-ghost" href="https://johnlaz.github.io/armory/assets/ARMORY.apk" download style="font-size:11px;padding:10px 18px;opacity:0.7;">
+          APK Download
+        </a>
       </div>
     </div>
 
@@ -913,14 +916,14 @@ footer {
   <div class="cta-glow"></div>
   <div class="section-wrap">
     <h2 class="cta-headline">Ready to <em>Master Your Vault</em>?</h2>
-    <p class="cta-sub">ARMORY is a free Android PWA. Install directly on your device. No app store. No middleman.</p>
+    <p class="cta-sub">ARMORY runs in your browser as a PWA — open it on any device and install directly from the browser. No app store. No middleman.</p>
     <div class="cta-btns">
-      <button class="btn btn-primary" onclick="document.querySelector('.footer-cta').scrollIntoView({behavior:'smooth'})">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download APK Now
-      </button>
+      <a class="btn btn-primary" href="https://johnlaz.github.io/armory/" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          Open ARMORY
+        </a>
     </div>
   </div>
 </section>
@@ -936,7 +939,19 @@ footer {
       </div>
     </div>
     <div class="footer-copy">© 2025 LAZLAB CREATIONS. ALL RIGHTS RESERVED. &nbsp;·&nbsp; NO ACCOUNTS. NO CLOUD. NO COMPROMISE.</div>
-    <div style="text-align:right;">
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:flex-end;">
+      <a href="https://johnlaz.github.io/armory/" target="_blank"
+         style="display:inline-flex;align-items:center;gap:8px;
+                font-family:var(--body);font-weight:700;font-size:12px;
+                letter-spacing:2px;text-transform:uppercase;
+                padding:11px 24px;
+                border:1px solid var(--gold-border);
+                background:var(--gold-glow);
+                color:var(--gold);border-radius:2px;text-decoration:none;
+                transition:all .2s;cursor:pointer;">
+        <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M13 10V3L4 14h7v7l9-11h-7z'/></svg>
+        Open PWA
+      </a>
       <a href="https://johnlaz.github.io/armory/assets/ARMORY.apk" download class="footer-cta"
          style="display:inline-flex;align-items:center;gap:10px;
                 font-family:var(--body);font-weight:700;font-size:13px;
